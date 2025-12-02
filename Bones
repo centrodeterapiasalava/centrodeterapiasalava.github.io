@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Terapias Álava</title>
+  <style>
+    /* Diseño general */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #006F6B; /* Azul oscuro */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .logo {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    /* Sección de contacto */
+    .contact-section {
+      background-color: #FFFFFF;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .contact-info div {
+      text-align: center;
+      max-width: 250px;
+    }
+    .contact-info h2 {
+      margin-bottom: 10px;
+      color: #006F6B;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    /* QR y contacto */
+    .qr-code {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Servicios */
+    .services-section {
+      background-color: #E5E5E5;
+      padding: 40px;
+      text-align: center;
+    }
+    .services-section h2 {
+      color: #006F6B;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .service-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin: 10px;
+    }
+    .service-card h3 {
+      color: #006F6B;
+    }
+    
+    /* Botón de contacto */
+    .contact-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #006F6B;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    
+    /* Adaptabilidad móvil */
+    @media (max-width: 768px) {
+      .contact-info {
+        flex-direction: column;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">A</div>
+    <h1>Centro de Terapias Álava</h1>
+    <p>Masajes, Osteopatía, Quiromasaje, Terapia Emocional</p>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contáctanos</h2>
+    <div class="contact-info">
+      <div>
+        <h2>Dirección</h2>
+        <p>Santa Barbara Plaza, 8, bajo, 01004 Vitoria-Gasteiz</p>
+      </div>
+      <div>
+        <h2>Teléfono / WhatsApp</h2>
+        <p>+34 634 135 542</p>
+      </div>
+      <div>
+        <h2>Correo electrónico</h2>
+        <p><a href="mailto:centrodeterapiasalava@gmail.com">centrodeterapiasalava@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="qr-code">
+      <!-- Aquí puedes añadir tu QR -->
+      <img src="tu-codigo-QR.png" alt="QR para contacto" width="150">
+    </div>
+
+    <a href="mailto:centrodeterapiasalava@gmail.com" class="contact-button">Contáctanos</a>
+  </section>
+
+  <section class="services-section">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Masajes</h3>
+        <p>Masajes terapéuticos para la relajación y el alivio del dolor.</p>
+      </div>
+      <div class="service-card">
+        <h3>Osteopatía</h3>
+        <p>Tratamientos específicos para mejorar la movilidad y aliviar tensiones.</p>
+      </div>
+      <div class="service-card">
+        <h3>Quiromasaje</h3>
+        <p>Masaje de tejidos profundos para la recuperación muscular.</p>
+      </div>
+      <div class="service-card">
+        <h3>Terapia Emocional</h3>
+        <p>Apoyo emocional para el bienestar integral de nuestros clientes.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
