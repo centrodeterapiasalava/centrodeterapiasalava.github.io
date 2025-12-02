@@ -4,54 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centro de Terapias Álava</title>
+  <!-- Fuente personalizada Satoshi Go -->
+  <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     /* Diseño general */
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Satoshi', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
+      background: #1e1e1e;
+      color: #fff;
     }
     header {
-      background-color: #006F6B; /* Azul oscuro */
+      background: linear-gradient(135deg, #006F6B, #00B4B8); /* Degradado azul-verde */
       color: white;
-      padding: 20px;
+      padding: 60px 20px;
       text-align: center;
+      border-bottom: 4px solid #00B4B8;
     }
     h1 {
-      font-size: 36px;
+      font-size: 48px;
       margin: 0;
+      font-family: 'Satoshi', sans-serif;
     }
     .logo {
-      font-size: 48px;
+      font-size: 80px;
       margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 18px;
     }
 
     /* Sección de contacto */
     .contact-section {
-      background-color: #FFFFFF;
-      padding: 40px;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 60px 20px;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-top: 4px solid #00B4B8;
     }
     .contact-info {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 30px;
       flex-wrap: wrap;
+      margin-bottom: 40px;
     }
     .contact-info div {
       text-align: center;
-      max-width: 250px;
+      max-width: 300px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .contact-info div:hover {
+      transform: scale(1.05);
     }
     .contact-info h2 {
       margin-bottom: 10px;
-      color: #006F6B;
+      color: #00B4B8;
+      font-family: 'Satoshi', sans-serif;
+      font-weight: 500;
     }
     .contact-info p {
       margin: 5px 0;
-      color: #555;
+      font-size: 16px;
     }
 
     /* QR y contacto */
@@ -62,12 +78,16 @@
 
     /* Servicios */
     .services-section {
-      background-color: #E5E5E5;
-      padding: 40px;
+      background: #212121;
+      padding: 60px 20px;
       text-align: center;
+      border-top: 4px solid #00B4B8;
     }
     .services-section h2 {
-      color: #006F6B;
+      color: #00B4B8;
+      font-family: 'Satoshi', sans-serif;
+      font-size: 36px;
+      margin-bottom: 30px;
     }
     .services {
       display: flex;
@@ -76,38 +96,57 @@
       flex-wrap: wrap;
     }
     .service-card {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      width: 200px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 12px;
+      padding: 30px;
+      width: 250px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
       text-align: center;
-      margin: 10px;
+      margin: 15px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
     }
     .service-card h3 {
-      color: #006F6B;
+      color: #00B4B8;
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-family: 'Satoshi', sans-serif;
+    }
+    .service-card p {
+      font-size: 16px;
+      color: #ccc;
     }
     
     /* Botón de contacto */
     .contact-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #006F6B;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background-color: #00B4B8;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-button:hover {
+      background-color: #007B75;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
     
     /* Adaptabilidad móvil */
     @media (max-width: 768px) {
       .contact-info {
         flex-direction: column;
+        align-items: center;
       }
       .services {
         flex-direction: column;
-        align-items: center;
       }
     }
   </style>
@@ -133,7 +172,7 @@
       </div>
       <div>
         <h2>Correo electrónico</h2>
-        <p><a href="mailto:centrodeterapiasalava@gmail.com">centrodeterapiasalava@gmail.com</a></p>
+        <p><a href="mailto:centrodeterapiasalava@gmail.com" style="color: #00B4B8;">centrodeterapiasalava@gmail.com</a></p>
       </div>
     </div>
 
