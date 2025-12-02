@@ -12,74 +12,92 @@
       font-family: 'Satoshi', sans-serif;
       margin: 0;
       padding: 0;
-      background: #1e1e1e;
+      background: #1d1d1d;
       color: #fff;
+      overflow-x: hidden;
     }
+
+    /* Header */
     header {
       background: linear-gradient(135deg, #006F6B, #00B4B8); /* Degradado azul-verde */
       color: white;
       padding: 60px 20px;
       text-align: center;
       border-bottom: 4px solid #00B4B8;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      position: relative;
+      z-index: 100;
     }
     h1 {
-      font-size: 48px;
+      font-size: 50px;
       margin: 0;
       font-family: 'Satoshi', sans-serif;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
     .logo {
       font-size: 80px;
       margin-bottom: 10px;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
     }
     p {
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: 400;
     }
 
     /* Sección de contacto */
     .contact-section {
       background: rgba(0, 0, 0, 0.85);
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
       border-top: 4px solid #00B4B8;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      z-index: 90;
     }
     .contact-info {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-      gap: 30px;
       flex-wrap: wrap;
       margin-bottom: 40px;
     }
     .contact-info div {
       text-align: center;
       max-width: 300px;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.4s ease-in-out, background-color 0.3s ease;
+      padding: 20px;
+      border-radius: 12px;
     }
     .contact-info div:hover {
       transform: scale(1.05);
+      background-color: #00B4B8;
     }
     .contact-info h2 {
       margin-bottom: 10px;
-      color: #00B4B8;
+      color: #fff;
       font-family: 'Satoshi', sans-serif;
       font-weight: 500;
     }
     .contact-info p {
-      margin: 5px 0;
       font-size: 16px;
+      color: #ccc;
     }
 
     /* QR y contacto */
     .qr-code {
       margin-top: 20px;
       text-align: center;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
     }
 
     /* Servicios */
     .services-section {
       background: #212121;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
       border-top: 4px solid #00B4B8;
     }
@@ -88,6 +106,9 @@
       font-family: 'Satoshi', sans-serif;
       font-size: 36px;
       margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
     .services {
       display: flex;
@@ -97,23 +118,25 @@
     }
     .service-card {
       background: rgba(0, 0, 0, 0.7);
-      border-radius: 12px;
-      padding: 30px;
-      width: 250px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 40px;
+      width: 270px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
       text-align: center;
-      margin: 15px;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+      margin: 20px;
+      transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
     }
     .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+      transform: translateY(-15px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+      background: #00B4B8;
     }
     .service-card h3 {
-      color: #00B4B8;
+      color: #fff;
       font-size: 22px;
       margin-bottom: 15px;
       font-family: 'Satoshi', sans-serif;
+      letter-spacing: 1px;
     }
     .service-card p {
       font-size: 16px;
@@ -124,21 +147,21 @@
     .contact-button {
       display: inline-block;
       margin-top: 30px;
-      padding: 14px 30px;
+      padding: 18px 40px;
       background-color: #00B4B8;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 12px;
       font-weight: 600;
-      font-size: 18px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
     .contact-button:hover {
       background-color: #007B75;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
     }
-    
+
     /* Adaptabilidad móvil */
     @media (max-width: 768px) {
       .contact-info {
@@ -147,6 +170,7 @@
       }
       .services {
         flex-direction: column;
+        align-items: center;
       }
     }
   </style>
